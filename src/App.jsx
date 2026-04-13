@@ -2,6 +2,7 @@ import { Suspense } from 'react';
 import './App.css'
 import Navbar from './components/navbar/navbar';
 import PricingCard from './components/card/pricingCard';
+import Recharts from './components/charts/recharts';
 
 const pricingPromise = fetch('pricingData.json').then(res => res.json());
 
@@ -19,6 +20,9 @@ function App() {
         <PricingCard pricingPromise={pricingPromise} />
       </Suspense>
   
+    <Recharts>
+      
+    </Recharts>
     </main>
      
     </>
